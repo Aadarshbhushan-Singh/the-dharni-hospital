@@ -1,0 +1,123 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,body{
+	background-color: white;
+	color: #555;
+	font-family: 'Lato', 'Arial', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+}
+html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+html,body{
+	background-color: rgb(233, 247, 247);
+}
+section{
+	padding: 80px 0;
+}
+header{
+	background-color: rgb(141, 211, 235);
+}
+.row{
+	max-width: 1140px;
+	margin: 0 auto 0 auto;
+}
+.index-buttons{
+	float: left;
+	width: 60%;
+	margin: 1%;
+}
+.buttons-list li{
+	display: inline-block;
+	margin-right: 6%;
+}
+.buttons-list a{
+	font-size: 150%;
+	color: white;
+	text-decoration: none;
+}
+.buttons-list a:hover{
+	color: yellow;
+	background-color: rgba(255,255,255, 0.3);
+	border: 1px solid orange;
+	border-radius: 15px;
+	padding: 1%;
+	transition: border-radius 0.1s, background-color 0.3s, color 0.3s;
+}
+
+/*******************************   portfolio    *************************************************/
+
+.portfolio{
+	padding: 1%;
+	text-align: center;
+}
+/*******************************   instruction-heading    *************************************************/
+.instruction{
+	padding: 0%;
+	color: blue;
+	text-decoration: underline;
+}
+/*******************************   instruction-list    *************************************************/
+.instruction-list{
+	padding: 2%;
+	color: blue;
+	font-weight: 500;
+	line-height: 140%;
+}
+/*******************************   checkbox    *************************************************/
+form{
+	margin-top: -8%;
+	color: red;
+}
+.button{
+	padding: 2%;
+	font-size: 150%;
+}
+
+/*******************************   for 1200 px   *************************************************/
+@media only screen and (max-device-width: 1200px){
+	.instruction h2{
+		margin-left: 6%;
+		margin-right: 6%;
+	}
+	.instruction-list{
+		margin-left: 7%;
+		margin-right: 7%;
+
+	}
+	.chickbox-req, .submit-button{
+		margin-left: 6%;
+	}
+}
+/*******************************   for 1023 px   *************************************************/
+@media only screen and (max-device-width: 1023px){
+	body{
+		font-size: 18px;
+	}
+}
+/*******************************   for 768 px   *************************************************/
+@media only screen and (max-device-width: 767px){
+	body{
+		font-size: 15px;
+	}
+}
+/*******************************   for 480 px   *************************************************/
+@media only screen and (max-device-width: 480px){
+	body{
+		font-size: 14px;
+	}
+	.chickbox-req, .submit-button{
+		margin-bottom: 0px;
+		paddint-bottom: 0px;
+	}
+}

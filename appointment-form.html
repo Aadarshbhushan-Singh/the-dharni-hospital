@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>appointment-form</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="CSS/style-appointment-form.css">
+	<link rel="stylesheet" type="text/css" href="grid.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="row row-buttons">
+			<div class="index-buttons">
+				<ul class="buttons-list">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="doctors.html">Doctors</a></li>
+					<li><a href="services.html">Services</a></li>
+					<li><a href="appointment.html">Appointment</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<!------------------------------------- Patient's Details   ------------------------------------------->
+	<section class="row heading">
+		<div class="heading-text">
+			<h3>Patient's Details</h3>
+		</div>
+		<hr>
+	</section>
+		<!------------------------------------- Form   ------------------------------------------->
+	<section class="whole-form row">
+		<form>
+			<div class="row first-row">
+				<div class=" first-col col span-1-of-2">
+					<label>Name: </label>
+					<br><input type="text" name="name" placeholder="Your name here" required><br>
+					<label>Date of Birth: </label><br>
+					<input type="date" name="dob" placeholder="2000-01-01"><br>
+					<label>Nationality: </label><br> <input type="text" name="country" placeholder="Nepal"><br>
+					<label>Occupatin: </label><br> <input type="text" name="occupation" placeholder="Occupation"><br>
+					<label>Attendant: </label><br> <input type="text" name="attendant" placeholder="Name of Attendant"><br>
+					<label>Relation with Attendant</label><br> <input type="text" name="relation" placeholder="Father/Mother">
+				</div>
+				<div class="second-col col span-1-of-2">
+						 <label>Gender: </label><br>
+						 <input type="radio" name="gender" class="gender-input"> <label>Male</label>
+						 <input type="radio" name="gender" class="gender-input"> <label>Female</label> 
+						 <input type="radio" name="gender" class="gender-input"> <label>Others</label> <br>
+					<label>Martial Status: </label>
+					 <select>
+					 	<option>Married</option>
+					 	<option>Unmarried</option>
+					 	<option>Divorced</option>
+					 	<option>Death of Spouse</option>
+					 </select> <br>
+					 <label>Religion: </label><br><input type="texxt" name="religion"> <br>
+					 <label>Medical History: </label><br> <input type="text" name="medical-history"><br>
+					 <label>Current Problem: </label> <br><input type="text" name="current-problem" placeholder="problem you have now"> <br>
+					 <label>Doctor's Name: </label> <br><input type="text" name="doctor's-name">
+				</div>				
+			</div>
+			<div class="row second-row">
+				<div class="third-col col span-1-of-2">
+					<h3>Permanent Adress</h3>
+					<label>Door No: </label> <br><input type="number" name="door-no" placeholder="1"> <br>
+					<label>Area: </label><br> <input type="text" name="area"> <br>
+					<label>District: </label> <br><input type="text" name="district" placeholder="Sunsari"> <br>
+					<label>State: </label> <br><input type="text" name="state" placeholder="Pradesh No. 01"> <br>
+				</div>
+			</div>
+			<div class="row third-row">
+				<div class="fourth-col col-span-1-of-2">
+					<label class="mobile-label">Mobile No: </label><br> <input type="number" name="phone number" placeholder="98.........." class="mobile-input"> <br>
+					<label class="mobile-label">Email: </label><br> <input type="email" name="email" placeholder="xyz@gmail.com" class="mobile-input">
+				</div>
+			</div>
+			<div class="row button-submit">
+				<input type="submit" name="submit">
+				<input type="reset" name="reset">
+			</div>
+		</form>
+	</section>
+</body>
+</html>

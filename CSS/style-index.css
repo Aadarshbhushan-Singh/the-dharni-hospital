@@ -1,0 +1,476 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,body{
+	background-color: white;
+	color: #555;
+	font-family: 'Lato', 'Arial', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+}
+html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.row{
+	max-width: 1140px;
+	margin: 0 auto 0 auto;
+}
+section{
+	padding: 80px 0;
+}
+header{
+	background-image: linear-gradient(rgba(20, 0, 0,0.6),rgba(20,0,0,0.6)), url('images/header-background.jpg');
+	background-size: 100% 100%;
+	height: 100vh;
+	width: auto;
+	background-attachment: fixed;
+}
+.index-buttons{
+	float: left;
+	width: 60%;
+	margin-top: 3%;
+}
+.buttons-list li{
+	display: inline-block;
+	margin-right: 6%;
+}
+.buttons-list a{
+	font-size: 160%;
+	color: #fff;
+	text-decoration: none;
+}
+.buttons-list a:hover{
+	color: yellow;
+	background-color: rgba(255,255,255, 0.3);
+	border: 1px solid orange;
+	border-radius: 15px;
+	padding: 1%;
+	transition: border-radius 0.1s, background-color 0.3s, color 0.3s;
+}
+.logo{
+	float: right;
+}
+.logo img{
+	width: 90%;
+	height: auto;
+	margin-left: 40%;
+	margin-top: 5%;
+
+}
+.middle-text{
+	position: absolute;
+	width: 1140px;
+	top: 60%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+}
+.middle-text{
+	color: white;
+}
+.middle-text h1{
+	font-size: 250%;
+	box-sizing: border-box;
+}
+.middle-text a{
+	margin-left: 2%;
+	color: white;
+	text-decoration: none;
+	border: 1px solid orange;
+	border-radius: 30px;
+	padding: 1%;
+}
+.middle-text a:hover{
+	background-color: rgba(255,255,255, 0.2);
+	color: orange;
+	transition: background-color 0.3s, color 0.3s;
+}
+.middle-text h1:hover{
+	font-size: 280%;
+	color: orange;
+	transition: color 0.3s, font-size 0.2s;
+
+}
+/****************************************************************************************/
+/* About Doctors  */
+/****************************************************************************************/
+.content-our-doctors{
+	padding: 1%;
+	color: orange;
+}
+.our-doctors h2{
+	text-align: center;
+	font-size: 200%;
+	color: orange;
+	padding-bottom: 3%;
+}
+.first-doctor-image img, .second-doctor-image img, .third-doctor-image img{
+	float: left;
+	width: 20%;
+	height: auto;
+	padding: 2%;
+	border-radius: 50%
+}
+.first-doctor-image img:hover, .second-doctor-image img:hover, .third-doctor-image img:hover{
+	width: 22%;
+	transition: width 0.9s;
+}
+.first-doctor-paragraph, .second-doctor-paragraph, .third-doctor-paragraph{
+	padding-top: 8%;
+	line-height: 150%;
+}
+/****************************************************************************************/
+/* Testimonials  */
+/****************************************************************************************/
+.testimonials-heading{
+	font-size: 200%;
+	margin-top: -2%;
+	color: orange;
+}
+.patient-1-image img, .patient-2-image img, .patient-3-image img{
+	width: 50%;
+	height: 25%;
+	border-radius: 50%;
+	margin-left: 20%;
+}
+.patient-1-paragraph, .patient-2-paragraph, .patient-3-paragraph{
+	font-size: 100%;
+	line-height: 190%;
+	color: orange;
+}
+.testimonials-heading{
+	text-align: center;
+}
+.testimonials{
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('images/testimonial-background.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 100vh;
+	width: auto;
+	background-attachment: fixed;
+}
+/****************************************************************************************/
+/* Message from CEO  */
+/****************************************************************************************/
+.ceo-message{
+	padding-top: 4%;
+	background-color:  rgb(252, 245, 225);
+}
+.row-ceo-message{
+	background-color: rgb(219, 218, 213);
+}
+.message-heading h2{
+	text-align: center;
+	font-size: 250%;
+	margin: 2%;
+}
+.ceo-image img{
+	width: 35%;
+	height: auto;
+	border-radius: 50%;
+	float: left;
+	margin: 0% 3% 2% 1%;
+}
+.message p{
+	font-size: 90%;
+	line-height: 145%;
+	margin: 2% 2% 5% 2%;
+}
+.about-ceo h2{
+	text-align: center;
+	margin-bottom: 1%
+}
+.about-us-text p{
+	text-align: justify;
+	padding: 2% 4%;
+}
+
+/****************************************************************************************/
+/* Footer  */
+/****************************************************************************************/
+footer{
+	background-color: rgb(120, 122, 121);
+}
+.footer-list{
+	float: left;
+	width: 50%;
+}
+.footer-icon{
+	float: right;
+	width: 20%;
+	padding: 3%;
+
+}
+.footer-list-links li{
+	display: inline-block;
+	margin-top: 6%;
+	margin-right: 4%;
+}
+.footer-list-links a{
+	text-decoration: none;
+	color: orange;
+}
+.footer-icon-links li{
+	display: inline-block;
+	margin: 2%;
+	padding: 3%;
+}
+.footer-icon-links a{
+	color: orange;
+}
+
+.footer-text{
+	color: orange;
+	font-size: 120%;
+	padding: 3%;
+	text-align: center;
+}
+
+/****************************************************************************************/
+/* media query  */
+/****************************************************************************************/
+
+/*****************************   1200 px   ******************************************/
+@media only screen and (max-width: 1200px){
+	body{
+		font-size: 18px;
+	}
+	.buttons-list li{
+	display: block;
+	margin-left: 3%;
+	margin-bottom: 1%;
+	}
+	.logo img{
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 5%;
+	}
+	.middle-text{
+	width:85%;
+	top: 55%;
+	left: 50%;
+	}
+	.our-doctors h2{
+		font-size: 180%;
+		padding-bottom: 2%;
+	}
+	.first-doctor-image img, .second-doctor-image img, .third-doctor-image img{
+		width: 15%;
+		padding: 1%;
+	}
+	.first-doctor-image img:hover, .second-doctor-image img:hover, .third-doctor-image img:hover{
+		width: 18%;
+	}
+	.first-doctor-paragraph, .second-doctor-paragraph, .third-doctor-paragraph{
+		font-size: 130%;
+		padding-top: 4%;
+		line-height: 130%;
+	}
+	.content-our-doctors{
+		width: 100%;
+		padding: 2%;
+		margin: 0%;
+	}
+	.testimonials .row{
+		width: 95%;
+	}
+	.testimonials-heading{
+	font-size: 180%;
+	}
+	.patient-1-image img, .patient-2-image img, .patient-3-image img{
+		width: 40%;
+		height: 20%;
+		margin-left: 15%;
+	}
+	.patient-1-paragraph, .patient-2-paragraph, .patient-3-paragraph{
+		font-size: 130%;
+		line-height: 190%;
+	}
+	.ceo-message{
+		padding: 0px;
+	}
+	.for-tablets{
+		display: none;
+	}
+	.message-heading h2{
+	font-size: 220%;
+	}
+	.ceo-image img{
+		width: 30%;
+	}
+	.message p{
+		font-size: 120%;
+		line-height: 155%;
+	}
+	.about-us-text p{
+		font-size: 120%;
+	}
+	.footer-list-links li{
+	margin-top: 4%;
+	margin-right: 2%;
+	}
+	.footer-text{
+		font-size: 120%;
+		padding: 2%;
+		text-align: center;
+	}
+
+}
+
+/*****************************   1023 px   ******************************************/
+@media only screen and (max-device-width: 1023px){
+	body{
+		font-size: 16px;
+	}
+	.buttons-list li{
+	margin-left: 4%;
+	margin-bottom: 3%;
+	font-size: 130%;
+	}
+	.logo{
+		width: 40%;
+	}
+	.logo img{
+		width: 100%;
+	}
+	.middle-text h1{
+		font-size: 300%;
+	}
+	.middle-text h1:hover{
+		font-size: 320%;
+	}
+	.middle-text a{
+		font-size: 150%;
+	}
+	.first-doctor-paragraph, .second-doctor-paragraph, .third-doctor-paragraph{
+		padding-top: 2%;
+	}
+	.for-small-tablets{
+		display: none;
+	}
+	.ceo-image img{
+		width: 25%;
+	}
+	.message p{
+		font-size: 130%;
+		line-height: 160%;
+	}
+	.about-us-text p{
+		font-size: 120%;
+		line-height: 150%;
+	}
+	.footer-list-links li{
+	margin-top: 4%;
+	margin-left: 8%;
+	}
+	.footer-text{
+		font-size: 120%;
+		padding-top: 0%;
+		text-align: center;
+	}
+
+}
+
+/*****************************    767 px   ******************************************/
+@media only screen and (max-device-width: 767px){
+	body{
+		font-size: 14px;
+	}
+	.buttons-list li{
+	margin-bottom: 5%;
+	font-size: 130%;
+	}
+	.logo{
+		width: 40%;
+	}
+	.logo img{
+		width: 100%;
+	}
+	.middle-text h1{
+		font-size: 280%;
+	}
+	.middle-text h1:hover{
+		font-size: 300%;
+	}
+	.middle-text a{
+		font-size: 140%;
+	}	
+	.about-doctors{
+		padding-top:10%;
+		padding-bottom: 15%;
+	}
+	.first-doctor-paragraph, .second-doctor-paragraph, .third-doctor-paragraph{
+		font-size: 100%;
+		padding-top: 2%;
+		line-height: 130%;
+	}
+	.for-small-tablets{
+		display: none;
+	}
+	.for-big-phones{
+		display: none;
+	}
+	.patient-1-paragraph, .patient-2-paragraph, .patient-3-paragraph{
+		font-size: 130%;
+		line-height: 150%;
+	}
+	.about-us-text p{
+		font-size: 120%;
+		line-height: 150%;
+	}
+	.footer-list-links li{
+	margin-top: 4%;
+	margin-left: 8%;
+	}
+	.footer-text{
+		font-size: 120%;
+		padding-top: 0%;
+		text-align: center;
+	}
+}
+
+/*****************************   480 px   ******************************************/
+@media only screen and (max-device-width: 480px){
+	col{width: 100%;}
+	body{
+		font-size: 12px;
+	}
+	.first-doctor-image img, .second-doctor-image img, .third-doctor-image img{
+		width: 20%;
+		padding: 1%;
+	}
+	.first-doctor-paragraph, .second-doctor-paragraph, .third-doctor-paragraph{
+		font-size: 120%;
+		padding-top: 2%;
+		line-height: 120%;
+		text-align: justify;
+	}
+	.first-doctor, .second-doctor{
+		margin-bottom: 6%;
+	}
+	.patient-1-image img, .patient-2-image img, .patient-3-image img{
+		width: 30%;
+		height: 20%;
+		margin-left: 30%;
+
+	}
+	.for-small-tablets{
+		display: none;
+	}
+	.for-big-phones{
+		display: none;
+	}
+	.patient-1-paragraph, .patient-2-paragraph, .patient-3-paragraph{
+		font-size: 120%;
+		line-height: 120%;
+	}
+
+}
